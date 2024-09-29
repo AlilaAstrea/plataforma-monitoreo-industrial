@@ -80,14 +80,16 @@ WSGI_APPLICATION = 'ddc.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-        # 'NAME' : 'ddc',
-        # 'USER' : 'root',
-        # 'PASSWORD' : ''
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME' : 'ddc',
+        'USER' : 'root',
+        'PASSWORD' : '321654987',
+        'HOST': 'localhost',
+        'PORT': '3306'
     }
 }
 
+# 'NAME': BASE_DIR / 'db.sqlite3',
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
